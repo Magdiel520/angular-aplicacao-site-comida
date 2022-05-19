@@ -1,0 +1,68 @@
+.banner {
+  background-image: url('../../../assets/img/banner.jpg');
+  height: 80vh;
+  background-position: center top;
+  background-size: cover;
+}
+
+.content{
+  top: 35%;
+  left: 3%;
+  position: absolute;
+}
+
+.content h1 {
+  color: white;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.content a {
+  text-decoration: none;
+  background-color: white;
+  color: blueviolet;
+  padding: 16px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.content a:hover {
+  background-color: blueviolet;
+  color: white;
+}
+
+.Box {
+  background-color: rgb(66, 60, 60);
+  padding: 20px 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.Box h1 {
+  color: yellow;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.Box p {
+  color: white;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.foodbox {
+  padding: 10px 5px;
+
+}
+
+.foodbox img{
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.foodbox h1{
+  font-size: 18px;
+  margin-top: 20px;
+}
