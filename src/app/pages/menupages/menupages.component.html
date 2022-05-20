@@ -1,5 +1,5 @@
 <div class="container mt-4 mb-5">
-  <h1 class="text-center">Detalhes</h1>
+  <h1 class="text-left">Detalhes</h1>
   <div class="row">
     <div class="col-lg-6" *ngIf="menuData">
       <div class="foodbox">
@@ -7,6 +7,13 @@
         <h1>{{menuData[0].foodName}}</h1>
         <p>{{menuData[0].foodDetails}}</p>
         <p>{{menuData[0].foodPrice | currency: 'BRL'}}</p>
+      </div>
+      <div class="col-lg-6">
+        <h1 class="text-center">Seus dados</h1>
+        <form action="">
+          <input type="text" class="form-control" placeholder="Digite seu nome">
+          <input type="number" class="form-control" placeholder="Digite seu telefone"/>
+        </form>
       </div>
     </div>
   </div>
