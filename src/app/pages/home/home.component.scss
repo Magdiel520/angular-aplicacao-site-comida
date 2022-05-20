@@ -1,51 +1,52 @@
-.banner {
-  background-image: url('../../../assets/img/banner.jpg');
+.banner {;
+  position: top;
   height: 80vh;
-  background-position: center top;
+  background-position: top;
   background-size: cover;
 }
 
 .content{
-  top: 35%;
-  left: 3%;
+  height: 80vh;
   position: absolute;
 }
 
 .content h1 {
+  text-align: left;
   color: white;
   font-size: 60px;
   font-weight: bold;
 }
 
 .content a {
+  float: left;
   text-decoration: none;
   background-color: white;
-  color: blueviolet;
-  padding: 16px 20px;
+  color: #ed145b;
+  padding: 1rem;
   border-radius: 8px;
   font-weight: bold;
 }
 
 .content a:hover {
-  background-color: blueviolet;
+  background-color: #ed145b;
   color: white;
 }
 
 .Box {
-  background-color: rgb(66, 60, 60);
+  background-color: #080707;
   padding: 20px 20px;
   border-radius: 8px;
   text-align: center;
 }
 
 .Box h1 {
-  color: yellow;
+  color: #ed145b;
   font-size: 50px;
   font-weight: bold;
 }
 
 .Box p {
-  color: white;
+  color: #ed145b;
   font-size: 20px;
   font-style: italic;
 }
@@ -65,4 +66,14 @@
 .foodbox h1{
   font-size: 18px;
   margin-top: 20px;
+  font-weight: bold;
+}
+
+.maisopcoes {
+  text-decoration: none;
+  background-color: #ed145b;
+  color: white;
+  padding: 10px 10px;
+  border-radius: 5px;
+  font-size: 18px;
 }

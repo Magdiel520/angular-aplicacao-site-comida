@@ -1,8 +1,40 @@
-<div class="banner">
-  <div class="content">
-    <h1 class="mb-5">Comida judaica<br>é a nossa especialidade!</h1>
-    <a routerLink="menu">Fazer pedido<i class="bi-arrow-right"></i></a>
+<div id="carouselExampleCaptions" class="carousel slide banner" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
+  <div class="carousel-inner content">
+    <div class="carousel-item active">
+      <img src="../../../assets/img/banner.jpg" class="w-100">
+      <div class="carousel-caption d-none d-md-block">
+        <h1 class="mb-5">Saboreie o melhor!</h1>
+        <a routerLink="menu">Fazer pedido<i class="bi-arrow-right"></i></a>
+      </div>
+    </div>
+    <div class="carousel-item content">
+      <img src="../../../assets/img/banner2.jpg" class="w-100">
+      <div class="carousel-caption d-none d-md-block">
+        <h1 class="mb-5">Saboreie o melhor!</h1>
+        <a routerLink="menu">Fazer pedido<i class="bi-arrow-right"></i></a>
+      </div>
+    </div>
+    <div class="carousel-item content">
+      <img src="../../../assets/img/banner3.jpeg" class="w-100">
+      <div class="carousel-caption d-none d-md-block">
+        <h1 class="mb-5">Saboreie o melhor!</h1>
+        <a routerLink="menu">Fazer pedido<i class="bi-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>
 
 <div class="container mt-5 mb-4">
@@ -30,14 +62,15 @@
 </div>
 
 <div class="container mt-4 mb-4">
-  <h1 class="text-center">Nossas especialidades</h1>
+  <h1 class="text-center">Mais pedidos</h1>
   <div class="row">
-    <div class="col-lg-3" *ngFor="let fd of foodData">
-      <div class="foodbox">
+    <div class="col-lg-3" *ngFor="let fd of foodData;index as i">
+      <div class="foodbox" *ngIf="i<=3">
         <img src="{{fd.foodImg}}"/>
         <h1>{{fd.foodName}}</h1>
-        <p>{{fd.foodPrice}}</p>
+        <p>{{fd.foodPrice | currency: 'BRL'}}</p>
       </div>
     </div>
   </div>
+  <a routerLink="menu" class="maisopcoes"> + Opções <i class="bi-arrow-right"></i> </a>
 </div>

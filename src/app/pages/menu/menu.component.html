@@ -1,1 +1,14 @@
-<p>menu works!</p>
+<div class="container mt-4 mb-5">
+  <h1 class="text-center">Nossas especialidades</h1>
+  <div class="row">
+    <div class="col-lg-4" *ngFor="let fd of foodData">
+      <div class="foodbox">
+        <img src="{{fd.foodImg}}"/>
+        <h1>{{fd.foodName}}</h1>
+        <p>{{fd.foodDetails}}</p>
+        <p>{{fd.foodPrice | currency: 'BRL'}}</p>
+        <a class="btn_pedido" [routerLink]="['/menu',fd.id]"> Pedir Agora! <i class="bi-cart4"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
